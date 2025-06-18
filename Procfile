@@ -1,0 +1,1 @@
+web: java -jar build/classes/java/main/me/dio/SantaderDevWeek2025Application.class

@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: postgresql://postgres:cXWxzPEirtzwwdfsDPLxxTXRrANzOKeL@caboose.proxy.rlwy.net:43521/railway
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+    # Raw psql command
+    # PGPASSWORD=cXWxzPEirtzwwdfsDPLxxTXRrANzOKeL psql -h caboose.proxy.rlwy.net -U postgres -p 43521 -d railway
+    # ${{ Postgres.DATABASE_URL }}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create  # create # validate
